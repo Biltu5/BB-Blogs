@@ -1,0 +1,314 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AA2A7D6-EF02-4E8B-B255-55D1994C0E24}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BB_Blogs</RootNamespace>
+    <AssemblyName>BB Blogs</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44374</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\icomoon.svg" />
+    <Content Include="fonts\NoteraPersonalUseOnly.svg" />
+    <Content Include="icon\apple-touch-icon-32-precomposed.png" />
+    <Content Include="icon\apple-touch-icon-48-precomposed.png" />
+    <Content Include="icon\favicon.png" />
+    <Content Include="images\about\about1.jpg" />
+    <Content Include="images\about\about2.jpg" />
+    <Content Include="images\about\about3.jpg" />
+    <Content Include="images\about\about4.png" />
+    <Content Include="images\about\about5.png" />
+    <Content Include="images\about\about6.png" />
+    <Content Include="images\blog\author-avatar.jpg" />
+    <Content Include="images\blog\b1.jpg" />
+    <Content Include="images\blog\b2-1.jpg" />
+    <Content Include="images\blog\b2-10.jpg" />
+    <Content Include="images\blog\b2-11.jpg" />
+    <Content Include="images\blog\b2-12.jpg" />
+    <Content Include="images\blog\b2-13.jpg" />
+    <Content Include="images\blog\b2-14.jpg" />
+    <Content Include="images\blog\b2-15.jpg" />
+    <Content Include="images\blog\b2-16.jpg" />
+    <Content Include="images\blog\b2-2.jpg" />
+    <Content Include="images\blog\b2-3.jpg" />
+    <Content Include="images\blog\b2-4.jpg" />
+    <Content Include="images\blog\b2-5.jpg" />
+    <Content Include="images\blog\b2-6.jpg" />
+    <Content Include="images\blog\b2-7.jpg" />
+    <Content Include="images\blog\b2-8.jpg" />
+    <Content Include="images\blog\b2-9.jpg" />
+    <Content Include="images\blog\b2.jpg" />
+    <Content Include="images\blog\b3.jpg" />
+    <Content Include="images\blog\b4.jpg" />
+    <Content Include="images\blog\bs1.jpg" />
+    <Content Include="images\blog\comment-avatar.jpg" />
+    <Content Include="images\blog\flickr1.png" />
+    <Content Include="images\blog\flickr2.png" />
+    <Content Include="images\blog\flickr3.png" />
+    <Content Include="images\blog\flickr4.png" />
+    <Content Include="images\blog\flickr5.png" />
+    <Content Include="images\blog\flickr6.png" />
+    <Content Include="images\blog\flickr7.png" />
+    <Content Include="images\blog\flickr8.png" />
+    <Content Include="images\blog\flickr9.png" />
+    <Content Include="images\blog\thumb1.png" />
+    <Content Include="images\blog\thumb2.png" />
+    <Content Include="images\blog\thumb3.png" />
+    <Content Include="images\blog\thumb4.png" />
+    <Content Include="images\blog\thumb5.png" />
+    <Content Include="images\blog\wdslide.png" />
+    <Content Include="images\course\cat-list1.jpg" />
+    <Content Include="images\course\cat1.jpg" />
+    <Content Include="images\course\cat2.jpg" />
+    <Content Include="images\course\cat3.jpg" />
+    <Content Include="images\course\cat4.jpg" />
+    <Content Include="images\course\cat5.jpg" />
+    <Content Include="images\course\cat6.jpg" />
+    <Content Include="images\course\cat7.jpg" />
+    <Content Include="images\course\cat8.jpg" />
+    <Content Include="images\course\course-single.jpg" />
+    <Content Include="images\course\course1.1.jpg" />
+    <Content Include="images\course\course1.2.jpg" />
+    <Content Include="images\course\course1.3.jpg" />
+    <Content Include="images\course\course1.4.jpg" />
+    <Content Include="images\course\course1.jpg" />
+    <Content Include="images\course\course2.jpg" />
+    <Content Include="images\course\course3.jpg" />
+    <Content Include="images\course\course4.jpg" />
+    <Content Include="images\course\course5.jpg" />
+    <Content Include="images\course\course6.jpg" />
+    <Content Include="images\course\course7.jpg" />
+    <Content Include="images\course\course8.jpg" />
+    <Content Include="images\course\f1.png" />
+    <Content Include="images\event\event.jpg" />
+    <Content Include="images\icon\1.jpg" />
+    <Content Include="images\icon\2.jpg" />
+    <Content Include="images\icon\3.jpg" />
+    <Content Include="images\icon\4.jpg" />
+    <Content Include="images\icon\add%402x.png" />
+    <Content Include="images\icon\add.png" />
+    <Content Include="images\icon\line.png" />
+    <Content Include="images\icon\search-icon%402x.png" />
+    <Content Include="images\icon\search-icon.png" />
+    <Content Include="images\icon\sub%402x.png" />
+    <Content Include="images\icon\sub.png" />
+    <Content Include="images\logo-f1.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\testLogo.png" />
+    <Content Include="images\member\1.png" />
+    <Content Include="images\member\2.png" />
+    <Content Include="images\member\3.png" />
+    <Content Include="images\member\4.png" />
+    <Content Include="images\member\5.png" />
+    <Content Include="images\parallax\bg-parallax1.jpg" />
+    <Content Include="images\parallax\bg-parallax2.jpg" />
+    <Content Include="images\parallax\bg-parallax3.jpg" />
+    <Content Include="images\parallax\bg-parallax4.jpg" />
+    <Content Include="images\parallax\bg-parallax5.jpg" />
+    <Content Include="images\parallax\bg-parallax7.jpg" />
+    <Content Include="images\parallax\bg-parallax8.jpg" />
+    <Content Include="images\portfolio\1.1.jpg" />
+    <Content Include="images\portfolio\1.2.jpg" />
+    <Content Include="images\portfolio\1.3.jpg" />
+    <Content Include="images\portfolio\1.4.jpg" />
+    <Content Include="images\portfolio\1.5.jpg" />
+    <Content Include="images\portfolio\1.6.jpg" />
+    <Content Include="images\portfolio\1.7.jpg" />
+    <Content Include="images\portfolio\1.8.jpg" />
+    <Content Include="images\portfolio\1.9.jpg" />
+    <Content Include="images\portfolio\2.1.jpg" />
+    <Content Include="images\portfolio\3.1.jpg" />
+    <Content Include="images\portfolio\3.2.jpg" />
+    <Content Include="images\portfolio\3.3.jpg" />
+    <Content Include="images\portfolio\3.4.jpg" />
+    <Content Include="images\slides\1.jpg" />
+    <Content Include="images\slides\2.jpg" />
+    <Content Include="images\slides\3.jpg" />
+    <Content Include="images\slides\4.jpg" />
+    <Content Include="images\slides\timer.png" />
+    <Content Include="images\teacher\1.png" />
+    <Content Include="images\teacher\2.png" />
+    <Content Include="images\teacher\3.png" />
+    <Content Include="images\teacher\4.png" />
+    <Content Include="images\teacher\5.png" />
+    <Content Include="images\teacher\6.png" />
+    <Content Include="images\teacher\7.png" />
+    <Content Include="images\teacher\8.png" />
+    <Content Include="images\teacher\9.png" />
+    <Content Include="images\testimonial\1.png" />
+    <Content Include="images\testimonial\2.png" />
+    <Content Include="images\testimonial\3.png" />
+    <Content Include="images\testimonial\4.png" />
+    <Content Include="images\testimonial\5.png" />
+    <Content Include="images\testimonial\6.png" />
+    <Content Include="javascript\bootstrap.min.js" />
+    <Content Include="javascript\imagesloaded.min.js" />
+    <Content Include="javascript\jquery-countTo.js" />
+    <Content Include="javascript\jquery-validate.js" />
+    <Content Include="javascript\jquery-waypoints.js" />
+    <Content Include="javascript\jquery.cookie.js" />
+    <Content Include="javascript\jquery.countdown.js" />
+    <Content Include="javascript\jquery.easing.js" />
+    <Content Include="javascript\jquery.fitvids.js" />
+    <Content Include="javascript\jquery.flexslider-min.js" />
+    <Content Include="javascript\jquery.isotope.min.js" />
+    <Content Include="javascript\jquery.magnific-popup.min.js" />
+    <Content Include="javascript\jquery.mb.YTPlayer.js" />
+    <Content Include="javascript\jquery.min.js" />
+    <Content Include="javascript\jquery.sticky.js" />
+    <Content Include="javascript\jquery.themepunch.revolution.min.js" />
+    <Content Include="javascript\jquery.themepunch.tools.min.js" />
+    <Content Include="javascript\jquery.tweet.min.js" />
+    <Content Include="javascript\main.js" />
+    <Content Include="javascript\owl.carousel.js" />
+    <Content Include="javascript\parallax.js" />
+    <Content Include="javascript\slider.js" />
+    <Content Include="javascript\smoothscroll.js" />
+    <Content Include="javascript\switcher.js" />
+    <Content Include="stylesheets\animate.css" />
+    <Content Include="stylesheets\bootstrap.css" />
+    <Content Include="stylesheets\colors\color1.css" />
+    <Content Include="stylesheets\flexslider.css" />
+    <Content Include="stylesheets\font-awesome.css" />
+    <Content Include="stylesheets\icomoon.css" />
+    <Content Include="stylesheets\magnific-popup.css" />
+    <Content Include="stylesheets\owl.carousel.css" />
+    <Content Include="stylesheets\responsive.css" />
+    <Content Include="stylesheets\revolution-slider.css" />
+    <Content Include="stylesheets\shortcodes.css" />
+    <Content Include="stylesheets\style.css" />
+    <Content Include="Web.config" />
+    <Content Include="BBWelcome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BBWelcome.aspx.cs">
+      <DependentUpon>BBWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBWelcome.aspx.designer.cs">
+      <DependentUpon>BBWelcome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont-1.eot" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\icomoon-1.eot" />
+    <Content Include="fonts\icomoon.eot" />
+    <Content Include="fonts\icomoon.ttf" />
+    <Content Include="fonts\icomoon.woff" />
+    <Content Include="fonts\NoteraPersonalUseOnly.ttf" />
+    <Content Include="fonts\NoteraPersonalUseOnly.woff" />
+    <Content Include="fonts\Notera_PersonalUseOnly-1.eot" />
+    <Content Include="fonts\Notera_PersonalUseOnly.eot" />
+    <Content Include="fonts\Notera_PersonalUseOnly.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56583</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44374/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
