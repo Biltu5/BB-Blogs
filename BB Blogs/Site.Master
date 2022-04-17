@@ -1,0 +1,286 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BB_Blogs.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <meta charset="utf-8" />
+
+    <meta name="author" content="BBGroup.com" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors" />
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css" />
+
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48" />
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed" />
+    <link href="icon/favicon.png" rel="shortcut icon" />
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="header-sticky">
+    <form id="form1" runat="server">
+        <div class="loader">
+            <span class="loader1 block-loader"></span>
+            <span class="loader2 block-loader"></span>
+            <span class="loader3 block-loader"></span>
+        </div>
+        <div class="boxed">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="language">
+                                <ul class="flat-information">
+                                    <li class="email">biltunayak78242372@gmail.com</li>
+                                    <li class="phone"><a href="61383766284">+91 9851879694</a></li>
+                                    <li class="current"><a href="#">English</a>
+                                        <ul>
+                                            <li class="en"><a href="#">English</a></li>
+                                            <li class="ge"><a href="#">German</a></li>
+                                            <li class="pl"><a href="#">Polish</a></li>
+                                            <li class="ru"><a href="#">Russian</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="top-navigator">
+                                <ul>
+                                    <li><a href='<%= Page.ResolveUrl("~") %>View/BBLogin.aspx'>Register</a></li>
+                                    <li><a href='<%= Page.ResolveUrl("~") %>View/BBLogin.aspx'>Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header id="header" class="header clearfix">
+                <div class="header-wrap clearfix">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div id="logo" class="logo">
+                                    <a href="View/BBWelcome.aspx" rel="home">
+                                        <img src="<%= Page.ResolveUrl("~")%>images/logo.png" alt="image" />
+                                    </a>
+                                </div>
+                                <div class="btn-menu">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="nav-wrap">
+                                    <nav id="mainnav" class="mainnav">
+                                        <ul class="menu">
+                                            <li class="home">
+                                                <a href='<%= Page.ResolveUrl("~") %>View/BBWelcome.aspx'>Home</a>
+                                            </li>
+                                            <li><a href='<%= Page.ResolveUrl("~") %>Courses/BBCourse.aspx'>Course</a>
+                                                <ul class="submenu">
+                                                    <li><a href='<%= Page.ResolveUrl("~") %>Courses/BBCourse.aspx'>Course</a></li>
+                                                    <li><a href='<%= Page.ResolveUrl("~") %>Courses/BBCourse_Categories.aspx'>Course Categories</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Pages</a>
+                                                <ul class="submenu">
+                                                    <li><a href='<%= Page.ResolveUrl("~") %>View/BBAbout_Us.aspx'>About Us</a></li>
+                                                    <li><a href='<%= Page.ResolveUrl("~") %>View/BBContact_Us.aspx'>Contac Us</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href='<%= Page.ResolveUrl("~") %>View/BBGallery.aspx'>Gallery</a></li>
+                                            <li><a href='<%= Page.ResolveUrl("~") %>Blog/BBBlog.aspx'>Blog </a></li>
+                                            <li><a href='#'>Shop</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-search">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="nav-search">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="top-search" id="s1">
+                                    <aside id="search-4" class="widget widget_search">
+                                        <div role="search" class="search-form">
+                                            <label>
+                                                <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+                                            </label>
+                                            <input type="submit" class="search-submit" value="Search" />
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- Fotter sectiobn -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="widget widget-text">
+                                <img src="<%= Page.ResolveUrl("~")%>images/logo_f1.png" alt="logo-footer" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="sidebar-inner-footer">
+                                <div class="widget widget-infomation">
+                                    <ul class="flat-information">
+                                        <li class="email">biltunayak78242372@gmail.com</li>
+                                        <li class="phone"><a href="61383766284">+91 9932256674</a></li>
+                                        <li class="address">27/A, Lichu Bagan, P.O. B.D.Sopan, Khardah, 24 Pgs (N) Kolkata-700116, West Bengal, India</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-widgets">
+                            <div class="col-md-2">
+                                <div class="widget widget_categories">
+                                    <h4 class="widget-title">Links</h4>
+                                    <ul>
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Maintenance</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="widget widget_categories">
+                                    <h4 class="widget-title">SUPPORT</h4>
+                                    <ul>
+                                        <li><a href="#">Documentation</a></li>
+                                        <li><a href="#">Forums</a></li>
+                                        <li><a href="#">Language Packs</a></li>
+                                        <li><a href="#">Release Status</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="widget widget_categories">
+                                    <h4 class="widget-title">Our Organisation</h4>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Become a Developer</a></li>
+                                        <li><a href="#">Our Developers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="widget widget_mc4wp">
+                                    <div id="mc4wp-form-1" class="form mc4wp-form clearfix">
+                                        <div>
+                                            <p>
+                                                <label>Subscribe now and receive weekly newsletter with educational materials, new courses, interesting posts, popular books and much more!</label>
+                                            </p>
+                                            <p>
+                                                <input type="email" name="EMAIL" placeholder="Your email address" required="" />
+                                                <input type="submit" value="SUBSCRIBE" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="line-top"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container-bottom">
+                            <div class="col-md-6">
+                                <div class="copyright">
+                                    <p>
+                                        © Copyright <a href="#">BB Group</a> 2022. All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="flat-socials text-right">
+                                    <li class="facebook">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="go-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+
+        </div>
+    </form>
+
+    <script src='<%= ResolveUrl("~/javascript/jquery.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/bootstrap.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.easing.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/imagesloaded.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.isotope.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/owl.carousel.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.mb.YTPlayer.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery-waypoints.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.flexslider-min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.cookie.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.fitvids.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery-validate.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.magnific-popup.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/parallax.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.countdown.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/switcher.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.sticky.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/smoothscroll.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/main.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.themepunch.tools.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/jquery.themepunch.revolution.min.js") %>'></script>
+    <script src='<%= ResolveUrl("~/javascript/slider.js") %>'></script>
+</body>
+</html>

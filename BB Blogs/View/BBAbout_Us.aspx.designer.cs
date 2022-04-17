@@ -7,20 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BB_Blogs
+namespace BB_Blogs.View
 {
 
 
-    public partial class WebForm1
+    public partial class About_Us
     {
-
-        /// <summary>
-        /// colors control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlLink colors;
     }
 }
