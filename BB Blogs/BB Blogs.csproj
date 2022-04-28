@@ -68,12 +68,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Blog\BBBlog.aspx" />
+    <Content Include="Blog\BBBlogUpload.aspx" />
     <Content Include="Blog\BBBlog_Single.aspx" />
     <Content Include="Courses\BBCourse.aspx" />
     <Content Include="Courses\BBCourse_Categories.aspx" />
     <Content Include="Courses\BBCourse_List.aspx" />
     <Content Include="Courses\BBCourse_Single.aspx" />
+    <Content Include="javascript\global.js" />
     <Content Include="Shop\BBShop.aspx" />
+    <Content Include="stylesheets\main.css" />
+    <Content Include="stylesheets\Style1.css" />
     <Content Include="View\BBAbout_Us.aspx" />
     <Content Include="View\BBGallery.aspx" />
     <Content Include="View\BBLogin.aspx" />
@@ -247,7 +251,6 @@
     <Content Include="stylesheets\responsive.css" />
     <Content Include="stylesheets\revolution-slider.css" />
     <Content Include="stylesheets\shortcodes.css" />
-    <Content Include="stylesheets\style.css" />
     <Content Include="View\BBContact_Us.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -258,6 +261,13 @@
     </Compile>
     <Compile Include="Blog\BBBlog.aspx.designer.cs">
       <DependentUpon>BBBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\BBBlogUpload.aspx.cs">
+      <DependentUpon>BBBlogUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\BBBlogUpload.aspx.designer.cs">
+      <DependentUpon>BBBlogUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Blog\BBBlog_Single.aspx.cs">
       <DependentUpon>BBBlog_Single.aspx</DependentUpon>
@@ -362,6 +372,20 @@
     <Content Include="fonts\Notera_PersonalUseOnly.woff2" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
+    <Content Include="stylesheets\css.css" />
+    <Content Include="stylesheets\css-1.css" />
+    <Content Include="stylesheets\css-2.css" />
+    <Content Include="stylesheets\s\karla\v21\qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lP.ttf" />
+    <Content Include="stylesheets\s\karla\v21\qkBIXvYC6trAT55ZBi1ueQVIjQTDH52aE0lP.ttf" />
+    <Content Include="stylesheets\s\karla\v21\qkBKXvYC6trAT7RQNNK2EG7SIwPWMNlCV3lIb7Y.ttf" />
+    <Content Include="stylesheets\s\karla\v21\qkBKXvYC6trAT7RQNNK2EG7SIwPWMNmlUHlIb7Y.ttf" />
+    <Content Include="stylesheets\s\raleway\v26\1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrQ.ttf" />
+    <Content Include="stylesheets\s\raleway\v26\1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpbCIPrQ.ttf" />
+    <Content Include="stylesheets\s\raleway\v26\1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf" />
+    <Content Include="stylesheets\s\vollkorn\v19\0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df213aeHmmZ.ttf" />
+    <Content Include="stylesheets\s\vollkorn\v19\0ybgGDoxxrvAnPhYGzMlQLzuMasz6Df2MHGeHmmZ.ttf" />
+    <Content Include="stylesheets\s\vollkorn\v19\0ybuGDoxxrvAnPhYGxksckM2WMCpRjDj-DJGWlmeObE.ttf" />
+    <Content Include="stylesheets\s\vollkorn\v19\0ybuGDoxxrvAnPhYGxksckM2WMCpRjDj-DKhXVmeObE.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -369,7 +393,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="javascript\TextEditorContents\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

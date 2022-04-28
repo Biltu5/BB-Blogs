@@ -31,7 +31,7 @@
                     <div class="col-md-9">
                         <article class="entry">
                             <div class="feature-post">
-                                <img src="images/blog/bs1.jpg" alt="image">
+                                <img src="<%= Page.ResolveUrl("~")%>images/blog/bs1.jpg" alt="image">
                             </div>
                             <div class="main-post">
                                 <h2 class="title-post"><a href="#">Designing healthcare apps with delight</a></h2>
@@ -82,7 +82,7 @@
                                 <h4 class="title">About author</h4>
                                 <article class="author">
                                     <div class="author-avatar">
-                                        <img src="images/blog/author-avatar.jpg" alt="image">
+                                        <img src="<%= Page.ResolveUrl("~")%>images/blog/author-avatar.jpg" alt="image">
                                     </div>
                                     <div class="position">
                                         <div class="author-meta">
@@ -116,7 +116,7 @@
                                             <article class="comment">
                                                 <h4 class="title comment-author">Michael windzor</h4>
                                                 <div class="comment-avatar">
-                                                    <img src="images/blog/comment-avatar.jpg" alt="image">
+                                                    <img src="<%= Page.ResolveUrl("~")%>images/blog/comment-avatar.jpg" alt="image">
                                                 </div>
                                                 <div class="comment-detail">
                                                     <div class="comment-meta">
@@ -131,7 +131,7 @@
                                             <article class="comment">
                                                 <h4 class="title comment-author">Michael windzor</h4>
                                                 <div class="comment-avatar">
-                                                    <img src="images/blog/comment-avatar.jpg" alt="image">
+                                                    <img src="<%= Page.ResolveUrl("~")%>images/blog/comment-avatar.jpg" alt="image">
                                                 </div>
                                                 <div class="comment-detail">
                                                     <div class="comment-meta">
@@ -205,39 +205,39 @@
                                 <div class="instagram-thumb clearfix">
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr1.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr1.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr2.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr2.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr3.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr3.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr4.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr4.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr5.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr5.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr6.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr6.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr7.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr7.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr8.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr8.png" alt="image"></a>
                                     </div>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img class="img" src="images/blog/flickr9.png" alt="image"></a>
+                                            <img class="img" src="<%= Page.ResolveUrl("~")%>images/blog/flickr9.png" alt="image"></a>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="images/blog/thumb1.png" alt="image"></a>
+                                                <img src="<%= Page.ResolveUrl("~")%>images/blog/thumb1.png" alt="image"></a>
                                         </div>
                                         <div class="text">
                                             <h4><a href="#">Melancholy Middletons Yet Understood Decisively</a></h4>
@@ -257,7 +257,7 @@
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="images/blog/thumb2.png" alt="image"></a>
+                                                <img src="<%= Page.ResolveUrl("~")%>images/blog/thumb2.png" alt="image"></a>
                                         </div>
                                         <div class="text">
                                             <h4><a href="#">Melancholy Middletons Yet Understood Decisively</a></h4>
@@ -267,7 +267,7 @@
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="images/blog/thumb3.png" alt="image"></a>
+                                                <img src="<%= Page.ResolveUrl("~")%>images/blog/thumb3.png" alt="image"></a>
                                         </div>
                                         <div class="text">
                                             <h4><a href="#">Melancholy Middletons Yet Understood Decisively</a></h4>
@@ -277,7 +277,7 @@
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="images/blog/thumb4.png" alt="image"></a>
+                                                <img src="<%= Page.ResolveUrl("~")%>images/blog/thumb4.png" alt="image"></a>
                                         </div>
                                         <div class="text">
                                             <h4><a href="#">Melancholy Middletons Yet Understood Decisively</a></h4>
@@ -287,7 +287,7 @@
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="images/blog/thumb5.png" alt="image"></a>
+                                                <img src="<%= Page.ResolveUrl("~")%>images/blog/thumb5.png" alt="image"></a>
                                         </div>
                                         <div class="text">
                                             <h4><a href="#">Melancholy Middletons Yet Understood Decisively</a></h4>
@@ -301,7 +301,7 @@
                                 <div class="widg-featured-post" data-item="1" data-nav="false" data-dots="true" data-auto="true">
                                     <div class="item">
                                         <a href="#">
-                                            <img src="images/blog/wdslide.png" alt="images"></a>
+                                            <img src="<%= Page.ResolveUrl("~")%>images/blog/wdslide.png" alt="images"></a>
                                         <div class="text">
                                             <h4><a href="#">Melancholy Middletons Yet Understood Decisively</a></h4>
                                             <p>December 9th, 2015</p>
@@ -309,7 +309,7 @@
                                     </div>
                                     <div class="item">
                                         <a href="#">
-                                            <img src="images/blog/wdslide.png" alt="images"></a>
+                                            <img src="<%= Page.ResolveUrl("~")%>images/blog/wdslide.png" alt="images"></a>
                                         <div class="text">
                                             <h4><a href="#">Melancholy Middletons Yet Understood Decisively</a></h4>
                                             <p>December 9th, 2015</p>

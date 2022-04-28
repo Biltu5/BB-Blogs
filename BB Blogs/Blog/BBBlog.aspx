@@ -14,8 +14,8 @@
                         <h1 class="title">Welcome To Our Blog</h1>
                         <div class="breadcrumbs">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li>All Course 2</li>
+                                <li><a href='<%= Page.ResolveUrl("~") %>View/BBWelcome.aspx'>Home</a></li>
+                                <li><a href='<%= Page.ResolveUrl("~") %>Blog/BBBlogUpload.aspx'>Create your Blog</a></li>
                             </ul>
                         </div>
                     </div>

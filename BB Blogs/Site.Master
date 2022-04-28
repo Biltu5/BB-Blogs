@@ -15,11 +15,9 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/Style1.css" />
 
     <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors" />
 
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css" />
 
@@ -204,7 +202,7 @@
                                                 <label>Subscribe now and receive weekly newsletter with educational materials, new courses, interesting posts, popular books and much more!</label>
                                             </p>
                                             <p>
-                                                <input type="email" name="EMAIL" placeholder="Your email address" required="" />
+                                                <input type="email" name="EMAIL" placeholder="Your email address" required="" /><br />
                                                 <input type="submit" value="SUBSCRIBE" />
                                             </p>
                                         </div>
@@ -259,7 +257,6 @@
 
         </div>
     </form>
-
     <script src='<%= ResolveUrl("~/javascript/jquery.min.js") %>'></script>
     <script src='<%= ResolveUrl("~/javascript/bootstrap.min.js") %>'></script>
     <script src='<%= ResolveUrl("~/javascript/jquery.easing.js") %>'></script>
